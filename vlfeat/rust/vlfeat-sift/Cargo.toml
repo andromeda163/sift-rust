@@ -1,0 +1,18 @@
+[package]
+name = "vlfeat-sift"
+version = "0.1.0"
+edition = "2021"
+description = "Numerically accurate Rust port of VLFeat SIFT core functions"
+license = "BSD-3-Clause"
+
+[dependencies]
+
+[dev-dependencies]
+approx = "0.5"
+float-cmp = "0.9"
+image = "0.24"
+# For comparing to C, we can use FFI later; for now pure Rust tests + bin dumps from modified VLFeat C code (set VLFEAT_SIFT_DUMP=1)
+
+[[example]]
+name = "compare_fast_expn"
+path = "examples/compare_fast_expn.rs"

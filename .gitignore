@@ -1,0 +1,24 @@
+# Rust build artifacts
+target/
+
+# Rust backup files
+**/*.rs.bk
+
+# MSVC debug info
+*.pdb
+
+# macOS
+.DS_Store
+
+# C/Object files (from VLFeat builds)
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+
+# Build directories
+bin/
+lib/
+build/
+dist/
